@@ -29,14 +29,16 @@ function playGame(){
 
   if(num1>num2){
     document.querySelector("h1").innerHTML="🚩 Hurray "+player1name+" won!";
+    document.querySelector(".invisible").innerHTML="Winner winner chiken dinner! <i class='fas fa-drumstick-bite'></i>";
     document.querySelector(".invisible").style.visibility='visible';
   }
   else if(num1<num2){
     document.querySelector("h1").innerHTML="🚩 Hurray "+player2name+" won!";
+    document.querySelector(".invisible").innerHTML="Winner winner chiken dinner! <i class='fas fa-drumstick-bite'></i>";
     document.querySelector(".invisible").style.visibility='visible';
   }
   else{
     document.querySelector("h1").innerHTML="It's a tie!";
-    document.querySelector(".invisible").style.visibility='hidden';
+    document.querySelector(".invisible").innerHTML="Play again, nothing got decided <i class='fas fa-smile-wink'></i>";
   }
 }
