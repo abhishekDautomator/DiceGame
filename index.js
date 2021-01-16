@@ -4,6 +4,9 @@ var player2name=prompt("Enter player 2 name");
 player1name=(player1name==null||player1name=="")?"Player1":player1name;
 player2name=(player2name==null||player2name=="")?"Player2":player2name;
 
+document.querySelector(".playerTxt1").innerHTML=player1name;
+document.querySelector(".playerTxt2").innerHTML=player2name;
+
 function refreshPage(){
     window.location.reload();
 }
@@ -14,13 +17,9 @@ function playGame(){
   }
   var num1=generateNumberFrom1To6();
   var num2=generateNumberFrom1To6();
-
   var randomDiceImg1 ="images/dice" + num1+ ".png";
-
   var randomDiceImg2 ="images/dice" + num2+ ".png";
 
-  document.querySelector(".playerTxt1").innerHTML=player1name;
-  document.querySelector(".playerTxt2").innerHTML=player2name;
   document.querySelector("#dice1").setAttribute("src",randomDiceImg1);
   document.querySelector("#dice2").setAttribute("src",randomDiceImg2);
 
