@@ -1,5 +1,3 @@
-alert("Let's start the game -> Who wins between the two");
-
 function generateNumberFrom1To6(){
     return Math.ceil(Math.random()*6);
 }
@@ -27,4 +25,8 @@ else if(num1<num2){
 }
 else{
   document.querySelector("h1").innerHTML="It's a tie!";
+}
+
+function refreshPage(){
+    window.location.reload();
 }
