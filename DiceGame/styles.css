@@ -1,0 +1,43 @@
+body{
+  background-color: #393E46;
+  text-align: center;
+}
+
+.content{
+  width:70%;
+  margin:auto;
+}
+
+.header{
+  color:#39CCCC;
+  font-size: 7rem;
+  font-family: 'Audiowide', cursive;
+  margin: 10px;
+  text-shadow: 5px 5px #232931;
+}
+
+.dice{
+  display: inline-block;
+}
+
+.playerTxt{
+    color:#3D9970;
+    font-size: 2rem;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+img{
+  width:80%;
+}
+
+.invisible{
+  visibility: hidden;
+  font-size: 3rem;
+  color: #FFDC00;
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+footer{
+  margin-top: 5%;
+  color: white;
+}
