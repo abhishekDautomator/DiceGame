@@ -1,8 +1,8 @@
 var player1name=prompt("Enter player 1 name");
 var player2name=prompt("Enter player 2 name");
 
-player1name=(player1name==null)?"Player1":player1name;
-player2name=(player2name==null)?"Player2":player2name;
+player1name=(player1name==null||player1name=="")?"Player1":player1name;
+player2name=(player2name==null||player2name=="")?"Player2":player2name;
 
 function refreshPage(){
     window.location.reload();
