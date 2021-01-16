@@ -1,6 +1,9 @@
 var player1name=prompt("Enter player 1 name");
 var player2name=prompt("Enter player 2 name");
 
+player1name=(player1name==null)?"Player1":player1name;
+player2name=(player2name==null)?"Player2":player2name;
+
 function refreshPage(){
     window.location.reload();
 }
@@ -34,5 +37,6 @@ function playGame(){
   }
   else{
     document.querySelector("h1").innerHTML="It's a tie!";
+    document.querySelector(".invisible").style.visibility='hidden';
   }
 }
