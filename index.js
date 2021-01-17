@@ -41,3 +41,7 @@ function playGame(){
     document.querySelector(".invisible").innerHTML="Play again, nothing got decided <i class='fas fa-smile-wink'></i>";
   }
 }
+
+document.querySelector(".refreshBtn").addEventListener("click",function(){
+  (new Audio("ONEDICE.wav")).play();
+})
